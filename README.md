@@ -3,6 +3,13 @@
 Dart client for the Consul KV-store.
 
 Wraps Consul's simple [key/value](https://www.consul.io/api/kv.html) store API.
+Client uses HTTP requests to communicate with Consul.
+Each method has optional parameters that are described in Consul API docs.
+
+You might want to wrap responses into some kind of handler 
+(check status codes, encode\convert values, etc.) - result is a flexible [`Response`](https://www.dartdocs.org/documentation/http/0.11.3%2B16/http/Response-class.html) object.
+
+Each method return [`Future`](https://api.dartlang.org/stable/1.24.3/dart-async/Future-class.html) which is used to get result.
 
 ## Usage
 
@@ -37,6 +44,3 @@ Future main() async {
 }
 ```
 
-You might want to wrap responses into some kind of handler 
-(check status codes, encode\convert values, etc.) - result is a flexible [`Response`](https://www.dartdocs.org/documentation/http/0.11.3%2B16/http/Response-class.html) object.
-Response result is the [`Future`](https://api.dartlang.org/stable/1.24.3/dart-async/Future-class.html).

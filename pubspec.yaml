@@ -1,6 +1,6 @@
 name: consul_kv_dart
 description: Dart client for the Consul KV-store
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/semolex
 author: Oleksii Semeshchuk <semolex@live.com>
 
