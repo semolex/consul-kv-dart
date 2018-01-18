@@ -34,7 +34,8 @@ Future main() async {
 
   consul.close();
 
-}```
+}
+```
 
 You might want to wrap responses into some kind of handler 
 (check status codes, encode\convert values, etc.) - result is a flexible [`Response`](https://www.dartdocs.org/documentation/http/0.11.3%2B16/http/Response-class.html) object.
