@@ -8,6 +8,7 @@ Wraps Consul's simple [key/value](https://www.consul.io/api/kv.html) store API.
 
 A simple usage example:
 
+    ```dart
     Future main() async {
       var consul = new ConsulKV(port: 5579, defaultHeaders: {'X-Consul-Token': 'bcd1234'});
       var newKey = await consul.put('foo', 'bar');
@@ -33,7 +34,7 @@ A simple usage example:
     
       consul.close();
     
-    }
+    }```
 
 You might want to wrap responses into some kind of handler 
 (check status codes, encode\convert values, etc.) - result is a flexible [`Response`](https://www.dartdocs.org/documentation/http/0.11.3%2B16/http/Response-class.html) object.
