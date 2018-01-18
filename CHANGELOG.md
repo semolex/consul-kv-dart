@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Resolving docgen issues
+
 ## 1.0.1
 
 - Description update

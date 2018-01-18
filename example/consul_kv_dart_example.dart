@@ -1,3 +1,5 @@
+/// Simple example of usage
+
 import 'dart:async';
 import 'package:consul_kv_dart/consul_kv_dart.dart';
 
